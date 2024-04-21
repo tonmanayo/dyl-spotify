@@ -1,8 +1,7 @@
 import { TrackType } from "../types";
 
-const clientId = "5815332195d34b3fa381be4204872791";
-const redirectUri =
-  "https://jammming-fhljs1uc9-dillans-projects-f662840b.vercel.app";
+const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
+const redirectUri = process.env.REACT_APP_REDIRECT_URI || "http://localhost:3000";
 const scopes = ["playlist-modify-public", "playlist-modify-private"];
 
 // Redirect to Spotify's Authorization Page
