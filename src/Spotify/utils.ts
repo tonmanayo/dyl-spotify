@@ -1,7 +1,9 @@
 import { TrackType } from "../types";
 
-const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID
-const redirectUri = process.env.REACT_APP_REDIRECT_URI || "http://localhost:3000";
+const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
+console.log(clientId);
+const redirectUri =
+  import.meta.env.VITE_REDIRECT_URI || "http://localhost:3000";
 const scopes = ["playlist-modify-public", "playlist-modify-private"];
 
 // Redirect to Spotify's Authorization Page
