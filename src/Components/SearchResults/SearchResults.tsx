@@ -1,6 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Track from "../Track/Track";
-import { TrackType } from "../Types";
+import { TrackType } from "../../types";
 
 type SearchResultsProps = {
   searchResults: TrackType[];
