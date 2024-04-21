@@ -12,7 +12,7 @@ type TrackProps = {
 
 const Track = ({ track, onAdd, onRemove, isAdded, isRemoval }: TrackProps) => {
   return (
-    <Box bg="gray.800" borderRadius="md" p="4" boxShadow="md">
+    <Box bg="navajowhite" borderRadius="md" p="4" boxShadow="md">
       <Text mt="2" fontWeight="bold">
         {track.title}
       </Text>
